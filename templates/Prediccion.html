@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prediccion</title>
+    <link rel="stylesheet" href="../static/css/predict.css">
+</head>
+<body>
+    <nav>
+        <img src="../static/img/UPC-carreras-para-gente-que-trabaja.png" alt="notfound" width="450px" height="160px">
+        <h1> {{ wins }}</h1>
+    </nav>
+    <div class="contenedor">
+        <div id = "container-images">
+            <div class="container">
+                <div>
+                    <h1>Image Player 1</h1>
+                    <img src="data:image/png;base64,{{ img_data }}" alt="figura1">
+                </div>
+                <ul>
+                    {% for num in nums %}
+                        <li>{{ num }}% {{ figuras[loop.index0] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="container">
+                <div>
+                    <h1>Image Player 2</h1>
+                    <img src="data:image/png;base64,{{ img_data2 }}" alt="figura2">
+                </div>
+                <ul>
+                    {% for num in nums2 %}
+                        <li>{{ num }}% {{ figuras[loop.index0] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <a href="/">
+            <button id="MainPage">Ir a la página principal</button>
+        </a>
+    </div>    
+</body>
+</html>

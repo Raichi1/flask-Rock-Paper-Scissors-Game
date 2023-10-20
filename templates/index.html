@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prediccion</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body onload="InitThis();InitThis2();">
+    <script src="../static/js/config.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <nav>
+        <img src="../static/img/UPC-carreras-para-gente-que-trabaja.png" alt="notfound" width="450px" height="160px">
+        <h1> Rock - paper - scissors game</h1>
+    </nav>
+    <div class="contenedor">
+        <div id = "container">
+            <div class="centrar" id ="P1">
+                <h1>PLAYER 1</h1>
+                <canvas id="myCanvas" width="250" height="250" style="border:2px solid black"></canvas>
+
+                <button style="width: min-content; font-size: 1.5rem; margin: 2px" onclick="javascript:clearArea();return false;">Borrar</button>
+                <button style="width: min-content; font-size: 1.5rem; margin: 2px" onclick="javascript:disableShow();return false;">Ocultar</button>
+                <!-- <form method="post" action="predict" onsubmit="javascript:prepareImg();"  enctype="multipart/form-data">
+                    <input id="numero" name="numero" type="hidden" value="">
+                    <input id="myImage" name="myImage" type="hidden" value="">
+                    <input id="bt_upload" style="font-size: 1.5rem" type="submit" value="Predecir">
+                </form> -->
+            </div>
+            <div class="centrar" id ="P2">
+                <h1>PLAYER 2</h1>
+                <canvas id="myCanvas2" width="250" height="250" style="border:2px solid black"></canvas>
+
+                <button style="width: min-content; font-size: 1.5rem; margin: 2px" onclick="javascript:clearArea2();return false;">Borrar</button>
+                <button style="width: min-content; font-size: 1.5rem; margin: 2px" onclick="javascript:disableShow2();return false;">Ocultar</button>
+                <!-- <form method="post" action="predict" onsubmit="javascript:prepareImg2();"  enctype="multipart/form-data">
+                    <input id="numero2" name="numero2" type="hidden" value="">
+                    <input id="myImage2" name="myImage2" type="hidden" value="">
+                    <input id="bt_upload2" style="font-size: 1.5rem" type="submit" value="Predecir">
+                </form> -->
+            </div>
+        </div>
+        <form method="post" action="predict" onsubmit="javascript:prepareImg();"  enctype="multipart/form-data">
+            <input id="numero" name="numero" type="hidden" value="">
+            <input id="myImage" name="myImage" type="hidden" value="">
+            <input id="numero2" name="numero2" type="hidden" value="">
+            <input id="myImage2" name="myImage2" type="hidden" value="">
+            <input id="bt_upload" style="font-size: 1.5rem" type="submit" value="Predecir">
+        </form>
+    </div>
+</body>
+</html>
