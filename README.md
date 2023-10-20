@@ -1,3 +1,7 @@
+Members:
+  - Renzo Andree Espíritu Cueva
+  - John Davis Sovero Cubillas
+
 ---
 title: Flask
 description: A popular minimal server framework for Python
