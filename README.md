@@ -1,11 +1,3 @@
-Members:
-  - Renzo Andree Espíritu Cueva
-  - John Davis Sovero Cubillas
-```
-Description:
-  Welcome to the AI-Powered Rock, Paper, Scissors web game hosted on GitHub! This unique take on 
-  the classic game brings a new dimension of challenge by incorporating real-time drawing.
-```
 ---
 title: Flask
 description: A popular minimal server framework for Python
