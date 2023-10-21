@@ -7,6 +7,12 @@ Game description
     the classic game brings a new dimension of challenge by incorporating real-time drawing.
     
 ---
+title: Flask
+description: A popular minimal server framework for Python
+tags:
+  - python
+  - flask
+---
 
 # Python Flask Example
 
