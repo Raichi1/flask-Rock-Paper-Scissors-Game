@@ -5,6 +5,7 @@ Members:
 Game description 
     Welcome to the AI-Powered Rock, Paper, Scissors web game hosted on GitHub! This unique take on 
     the classic game brings a new dimension of challenge by incorporating real-time drawing.
+    
 ---
 
 # Python Flask Example
