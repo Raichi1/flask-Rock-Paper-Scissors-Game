@@ -79,7 +79,7 @@ def predict():
         print(f'Indice I1: {indexVal1} - Max1: {maxValue1}')
         print(f'Indice I2: {indexVal2} - Max2: {maxValue2}')
 
-        figura = ["Papel", "Piedra", "Tijera"]
+        figura = ["Piedra", "Papel", "Tijera"]
 
         text = ""
         if figura[indexVal1] == figura[indexVal2]: text="DRAW"
